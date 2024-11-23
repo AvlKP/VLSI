@@ -1,0 +1,380 @@
+$date
+	Sun Nov 24 00:30:30 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module sigmoid8_pla_tb $end
+$var wire 1 ! sigmoid_valid_out $end
+$var wire 16 " sigmoid_out [15:0] $end
+$var reg 1 # clk $end
+$var reg 1 $ rst $end
+$var reg 1 % valid_in $end
+$var reg 16 & x_in [15:0] $end
+$scope module sigmoid_inst $end
+$var wire 1 # clk $end
+$var wire 1 $ rst $end
+$var wire 1 % valid_in $end
+$var wire 16 ' x_in [15:0] $end
+$var parameter 16 ( BP0 $end
+$var parameter 16 ) BP1 $end
+$var parameter 16 * BP2 $end
+$var parameter 16 + BP3 $end
+$var parameter 16 , BP4 $end
+$var parameter 16 - BP5 $end
+$var parameter 16 . BP6 $end
+$var parameter 16 / BP7 $end
+$var parameter 16 0 BP8 $end
+$var parameter 32 1 FIXED_POINT $end
+$var parameter 16 2 INTERCEPT_0 $end
+$var parameter 16 3 INTERCEPT_1 $end
+$var parameter 16 4 INTERCEPT_2 $end
+$var parameter 16 5 INTERCEPT_3 $end
+$var parameter 16 6 INTERCEPT_4 $end
+$var parameter 16 7 INTERCEPT_5 $end
+$var parameter 16 8 INTERCEPT_6 $end
+$var parameter 16 9 INTERCEPT_7 $end
+$var parameter 16 : SLOPE_0 $end
+$var parameter 16 ; SLOPE_1 $end
+$var parameter 16 < SLOPE_2 $end
+$var parameter 16 = SLOPE_3 $end
+$var parameter 16 > SLOPE_4 $end
+$var parameter 16 ? SLOPE_5 $end
+$var parameter 16 @ SLOPE_6 $end
+$var parameter 16 A SLOPE_7 $end
+$var reg 3 B segment_select [2:0] $end
+$var reg 1 ! valid_out $end
+$var reg 1 C valid_stage1 $end
+$var reg 16 D x_stage1 [15:0] $end
+$var reg 16 E y_out [15:0] $end
+$scope module seg_calc_0 $end
+$var wire 1 # clk $end
+$var wire 16 F intercept [15:0] $end
+$var wire 16 G slope [15:0] $end
+$var wire 16 H x_in [15:0] $end
+$var parameter 32 I FIXED_POINT $end
+$var reg 16 J result [15:0] $end
+$upscope $end
+$scope module seg_calc_1 $end
+$var wire 1 # clk $end
+$var wire 16 K intercept [15:0] $end
+$var wire 16 L slope [15:0] $end
+$var wire 16 M x_in [15:0] $end
+$var parameter 32 N FIXED_POINT $end
+$var reg 16 O result [15:0] $end
+$upscope $end
+$scope module seg_calc_2 $end
+$var wire 1 # clk $end
+$var wire 16 P intercept [15:0] $end
+$var wire 16 Q slope [15:0] $end
+$var wire 16 R x_in [15:0] $end
+$var parameter 32 S FIXED_POINT $end
+$var reg 16 T result [15:0] $end
+$upscope $end
+$scope module seg_calc_3 $end
+$var wire 1 # clk $end
+$var wire 16 U intercept [15:0] $end
+$var wire 16 V slope [15:0] $end
+$var wire 16 W x_in [15:0] $end
+$var parameter 32 X FIXED_POINT $end
+$var reg 16 Y result [15:0] $end
+$upscope $end
+$scope module seg_calc_4 $end
+$var wire 1 # clk $end
+$var wire 16 Z intercept [15:0] $end
+$var wire 16 [ slope [15:0] $end
+$var wire 16 \ x_in [15:0] $end
+$var parameter 32 ] FIXED_POINT $end
+$var reg 16 ^ result [15:0] $end
+$upscope $end
+$scope module seg_calc_5 $end
+$var wire 1 # clk $end
+$var wire 16 _ intercept [15:0] $end
+$var wire 16 ` slope [15:0] $end
+$var wire 16 a x_in [15:0] $end
+$var parameter 32 b FIXED_POINT $end
+$var reg 16 c result [15:0] $end
+$upscope $end
+$scope module seg_calc_6 $end
+$var wire 1 # clk $end
+$var wire 16 d intercept [15:0] $end
+$var wire 16 e slope [15:0] $end
+$var wire 16 f x_in [15:0] $end
+$var parameter 32 g FIXED_POINT $end
+$var reg 16 h result [15:0] $end
+$upscope $end
+$scope module seg_calc_7 $end
+$var wire 1 # clk $end
+$var wire 16 i intercept [15:0] $end
+$var wire 16 j slope [15:0] $end
+$var wire 16 k x_in [15:0] $end
+$var parameter 32 l FIXED_POINT $end
+$var reg 16 m result [15:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 l
+b1000 g
+b1000 b
+b1000 ]
+b1000 X
+b1000 S
+b1000 N
+b1000 I
+b1 A
+b110 @
+b10111 ?
+b110110 >
+b110110 =
+b10111 <
+b110 ;
+b1 :
+b11110111 9
+b11100001 8
+b10101111 7
+b10000000 6
+b10000000 5
+b1010001 4
+b11111 3
+b1001 2
+b1000 1
+b11000000000 0
+b10010000000 /
+b1100000000 .
+b110000000 -
+b0 ,
+b1111111010000000 +
+b1111110100000000 *
+b1111101110000000 )
+b1111101000000000 (
+$end
+#0
+$dumpvars
+bx m
+b0 k
+b1 j
+b11110111 i
+bx h
+b0 f
+b110 e
+b11100001 d
+bx c
+b0 a
+b10111 `
+b10101111 _
+bx ^
+b0 \
+b110110 [
+b10000000 Z
+bx Y
+b0 W
+b110110 V
+b10000000 U
+bx T
+b0 R
+b10111 Q
+b1010001 P
+bx O
+b0 M
+b110 L
+b11111 K
+bx J
+b0 H
+b1 G
+b1001 F
+b0 E
+b0 D
+0C
+bx B
+b0 '
+b0 &
+0%
+1$
+0#
+b0 "
+0!
+$end
+#5
+b1001 J
+b11111 O
+b1010001 T
+b10000000 Y
+b10000000 ^
+b10101111 c
+b11100001 h
+b11110111 m
+1#
+#10
+0#
+#15
+1#
+#20
+0#
+0$
+#25
+bx "
+bx E
+b100 B
+b1111101000000000 &
+b1111101000000000 '
+1%
+1#
+#30
+0#
+#35
+b1 B
+1C
+b1111101110000000 D
+b1111101110000000 H
+b1111101110000000 M
+b1111101110000000 R
+b1111101110000000 W
+b1111101110000000 \
+b1111101110000000 a
+b1111101110000000 f
+b1111101110000000 k
+b10000000 "
+b10000000 E
+1#
+b1111101110000000 &
+b1111101110000000 '
+#40
+0#
+#45
+b100 J
+b100 O
+b1111111111101001 T
+b10001101 Y
+b10001101 ^
+b1000111 c
+b11000110 h
+b11110010 m
+b11111 "
+b11111 E
+1!
+b10 B
+b1111110100000000 D
+b1111110100000000 H
+b1111110100000000 M
+b1111110100000000 R
+b1111110100000000 W
+b1111110100000000 \
+b1111110100000000 a
+b1111110100000000 f
+b1111110100000000 k
+1#
+b1111110100000000 &
+b1111110100000000 '
+#50
+0#
+#55
+b11110100 m
+b11001111 h
+b1101010 c
+b11011110 ^
+b11011110 Y
+b1100 T
+b1101 O
+b110 J
+b100 B
+b0 D
+b0 H
+b0 M
+b0 R
+b0 W
+b0 \
+b0 a
+b0 f
+b0 k
+b1111111111101001 "
+b1111111111101001 E
+1#
+b0 &
+b0 '
+#60
+0#
+#65
+b1001 J
+b11111 O
+b1010001 T
+b10000000 Y
+b10000000 ^
+b10101111 c
+b11100001 h
+b11110111 m
+b11011110 "
+b11011110 E
+b110 B
+b1100000000 D
+b1100000000 H
+b1100000000 M
+b1100000000 R
+b1100000000 W
+b1100000000 \
+b1100000000 a
+b1100000000 f
+b1100000000 k
+1#
+b1100000000 &
+b1100000000 '
+#70
+0#
+#75
+b11111010 m
+b11110011 h
+b11110100 c
+b100010 ^
+b100010 Y
+b10010110 T
+b110001 O
+b1100 J
+b111 B
+b11000000000 D
+b11000000000 H
+b11000000000 M
+b11000000000 R
+b11000000000 W
+b11000000000 \
+b11000000000 a
+b11000000000 f
+b11000000000 k
+b11100001 "
+b11100001 E
+1#
+b11000000000 &
+b11000000000 '
+#80
+0#
+#85
+b1111 J
+b1000011 O
+b1111111111011011 T
+b11000100 Y
+b11000100 ^
+b111001 c
+b100000101 h
+b11111101 m
+b100000000 "
+b100000000 E
+0C
+1#
+0%
+#90
+0#
+#95
+0!
+1#
+#100
+0#
+#105
+1#
+#110
+0#
+#115
+1#
